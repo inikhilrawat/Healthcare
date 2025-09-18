@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/hh.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthcareAi</title>
+     
+    <link rel="stylesheet" href="./src/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+  <body>
+    <header class="flex items-center justify-between px-6 py-3 border-b border-gray-500">
+      <div class="flex items-center space-x-3">
+        <div class=" relative w-14 h-10 flex items-center justify-center">
+          <img src="./images/1758099609364.jpg" width="500px" height="300px" alt="logo">
+        </div>
+        <div>
+          <h1 class="font-[poppins] text-2xl font-semibold text-gray-700">HealthcareAi</h1>
+          <p class="text-sm text-gray-500">Your comprehensive healthcare assitance</p>
+        </div>
+      </div>
+      <nav class="flex items-center space-x-8">
+        <button class="flex items-center space-x-2 px-4 py-1 active:text-gray-800 hover:ease-in-out hover:scale-110 delay-100 transition-all duration-200 hover:text-amber-50 cursor-pointer hover:bg-gray-500 rounded-full" >
+          <span>💬</span><span>Ai-Chat</span>
+        </button>
+        <button class="flex items-center space-x-2 px-4 py-1 active:text-gray-800 hover:ease-in-out hover:scale-110 delay-100 transition-all duration-200 hover:text-amber-50 cursor-pointer hover:bg-gray-500 rounded-full" "  >
+          <span>🩺</span><span>Symptoms checker</span>
+        </button>
+        <button class="flex items-center space-x-2 px-4 py-1 active:text-gray-800 hover:ease-in-out hover:scale-110 delay-100 transition-all duration-200 hover:text-amber-50 cursor-pointer hover:bg-gray-500 rounded-full" ">
+          <span>📋</span><span>Find Clinic</span>
+        </button>
+        <button class="flex items-center space-x-2 px-4 py-1 active:text-gray-800 hover:ease-in-out hover:scale-110 delay-100 transition-all duration-200 hover:text-amber-50 cursor-pointer hover:bg-gray-500 rounded-full" ">
+          <span>📅</span><span>Appointments</span>
+        </button>
+        <div class="relative">
+        <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-2 py-0.5 rounded-full">2</span>
+        <button class="text-xl cursor-pointer">🔔</button>
+      </div>
+      <button class="text-xl cursor-pointer">⚙️</button>
+      <button class="text-xl cursor-pointer">👤</button>
+      </nav>
+
+    </header>
+
+    <!-- chat-section -->
+
+    <main class="max-w-4xl mx-auto p-6">
+      <div class="flex items-start space-x-3 mb-4">
+        <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center ">
+        🤖
+        </div>
+        <div>
+          <p class="font-[poppins] font-semibold">Healthcare AI assitance</p>
+          <p class="text-sm font-[poppins] text-gray-500">Online.Ready to Help</p>
+          <div class="bg-gray-100 rounded-lg p-3 mt-2 max-w-xl font-[poppins] text-sm">
+          <p>
+            Hello! I'm your AI healthcare assistant. I can help you with symptom checking, 
+            finding nearby clinics, and booking appointments. How can I assist you today?
+          </p>
+        </div>
+
+        <!-- quick action -->
+         <div class="flex flex-row mt-2 space-x-2 ">
+        <button class="border-1 active:text-gray-800 hover:ease-in-out hover:scale-110 delay-100 transition-all duration-200 hover:text-gray-700 cursor-pointer hover:bg-gray-300 rounded-full px-3 py-1 text-sm  font-[poppins]">Symptom check</button>
+        <button class="border-1 active:text-gray-800 hover:ease-in-out hover:scale-110 delay-100 transition-all duration-200 hover:text-gray-700 cursor-pointer hover:bg-gray-300 rounded-full px-3 py-1 text-sm  font-[poppins]">Find Clinic</button>
+        <button class="border-1 active:text-gray-800 hover:ease-in-out hover:scale-110 delay-100 transition-all duration-200 hover:text-gray-700 cursor-pointer hover:bg-gray-300 rounded-full px-3 py-1  font-[poppins] text-sm">Appointments</button>
+         </div>
+        </div>
+      </div>
+    </main>
+  <!-- chatbot section -->
+   <div class= "fixed bottom-0 left-0 right-0 bg-white border-t px-6 py-3">
+    <div class="max-w-4xl mx-auto flex items-center space-x-2 ">
+  <h1 class="text-2xl font-[poppins]">How Can i help you !</h1>
+
+    
+    <input type="text" placeholder="Type your health concern..." class="flex-1 border rounded-lg px-4 py-2 bg-gray-50">
+      <button class="bg-gray-500 text-white px-4 py-2 rounded-lg cursor-pointer">➤</button>
+   </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
